@@ -31,7 +31,7 @@ def crawl_stock():
         df = df.rename(columns={'companyNameEng':'company'})
         df['listedDate'] = pd.to_datetime(df['listedDate'])
         df.to_csv('vnstock_data/all_stock.csv', index=False)
-    return ('successfully crawl all stock')
+    return ('successfully crawl all stocks')
 
 @app.route("/updatedb",methods=['GET', 'POST'])
 def update_db():

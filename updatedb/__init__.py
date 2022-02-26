@@ -1,0 +1,2 @@
+import updatedb.create_tables
+import updatedb.add_all
